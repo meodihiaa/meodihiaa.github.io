@@ -5,8 +5,8 @@ layout: default
 <div class="container">
    <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
       <div class="h-100 tofront">
-         <div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
-            <div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+         <div class="row justify-content-center">
+            <div class="col-md-8 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
                <p class="text-uppercase font-weight-bold">
                   <span class="catlist">
                   {% for category in page.categories %}
@@ -24,22 +24,11 @@ layout: default
                   </small>
                </div>
             </div>
-            {% assign img_path = page.image %}
-            {% if img_path == nil %}
-            {% assign parts = page.content | split:'src="' %}
-            {% if parts.size > 1 %}
-            {% assign img_path = parts[1] | split:'"' | first %}
-            {% endif %}
-            {% endif %}
-            {% if img_path %}
-            <div class="col-md-6 pr-0 align-self-center">
-               <img class="rounded" src="{{ img_path }}" alt="{{ page.title }}">
-            </div>
-            {% endif %}
          </div>
       </div>
    </div>
 </div>
+
 <div class="container-lg pt-4 pb-4">
    <div class="row justify-content-center">
       <!-- Share -->
@@ -65,6 +54,7 @@ layout: default
          <article class="article-post">                
             {{ content }}                
          </article>
+
          <!-- Tags -->
          <div class="mb-4">
             <span class="taglist">
@@ -73,6 +63,7 @@ layout: default
             {% endfor %}
             </span>
          </div>
+
          <!-- Mailchimp Subscribe Form -->
          {% if site.mailchimp-list %}
          <div class="border p-5 bg-lightblue">
@@ -94,6 +85,7 @@ layout: default
             </div>
          </div>
          {% endif %}
+
          <!-- Author Box -->
          {% if page.author %}				
          <div class="row mt-5">
@@ -108,6 +100,7 @@ layout: default
             </div>
          </div>
          {% endif %}
+
          <!-- Comments -->
          {% if page.comments != false %}
          {% include comments.html %}
@@ -115,7 +108,8 @@ layout: default
       </div>
    </div>
 </div>
-<!-- Aletbar Prev/Next -->
+
+<!-- Alertbar Prev/Next -->
 <div class="alertbar">
    <div class="container">
       <div class="row prevnextlinks small font-weight-bold">
