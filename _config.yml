@@ -1,11 +1,11 @@
 # Site
-name: 'Mundana'
-description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
+name: 'meodihia'
+description: 'working on gpm login - an antidetect browser and no code automation platform'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'demowebsite'
-email: 'wowthemesnet@gmail.com'
+email: 'hiimmaxx7@gmail.com'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
@@ -19,22 +19,14 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+    meodihia:
+      name:           meodihia
+      site:           https://gpmloginapp.com
+      avatar:         https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/497609393_731881032510270_7960054934273232382_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Gik_25DMfeQQ7kNvwGmFDM9&_nc_oc=AdlMwrGhYJ2tswvr2aEQbivkIwoUC44xM8XNBVesf4gjw-Zg9DycUbzWGBd5HOyVaFA&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=-w3n5MvgCGeWW48fDCgdhw&oh=00_AfUIP0NlcCRDcnMJRPgXkB4Vw0Z1ca8MOnGbD2GuL2QHBg&oe=68A5C35C
+      bio:            "Hi, I am meodihia, currently working on gpm login - an antidetect browser and no code automation platform"
+      email:          hiimmaxx7@gmail.com
+      twitter:        https://twitter.com/hiimmaxx7
 
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
- 
 # Defaults
 defaults:
 
