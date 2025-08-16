@@ -24,11 +24,20 @@ layout: default
 						</small>
 					</div>
 				</div>
-                {% if page.image %}
-				<div class="col-md-6 pr-0 align-self-center">
-					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
-				</div>
-                {% endif %}
+                {% assign img_path = page.image %}
+{% if img_path == nil %}
+  {% assign parts = page.content | split:'src="' %}
+  {% if parts.size > 1 %}
+    {% assign img_path = parts[1] | split:'"' | first %}
+  {% endif %}
+{% endif %}
+
+{% if img_path %}
+<div class="col-md-6 pr-0 align-self-center">
+  <img class="rounded" src="{{ img_path }}" alt="{{ page.title }}">
+</div>
+{% endif %}
+
 			</div>
 		</div>
 	</div>
