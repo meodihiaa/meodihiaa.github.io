@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7 Free Online IP Fingerprint Checker Tool"
-image: https://miro.medium.com/v2/resize:fit:700/1*nCgf0fXeUF4HhKf-40NbWA.png
+image: https://miro.medium.com/v2/resize:fit:700/1*rv-qu1qw8oS0oXx4xvMMLw.png
 tags: 
   - browser fingerprinting
   - fingerprint checker
